@@ -1,0 +1,230 @@
+
+@keyframes down-fadein-anim {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    70% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes background-img-move-anim{
+    0%{
+        background-position: 40% 20%;
+    }   
+    100%{
+        background-position: 60% 60%;
+    }   
+}
+
+@keyframes down-fadeout-anim {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+@keyframes up-wide-anim{
+    0% {
+        opacity: 0;
+        width: 0;
+        transform: translateY(30px);
+    }
+    50%{
+        opacity: 1;
+        width: 0;
+        transform: translateY(0);
+    }
+    100%{
+        width: 80%;
+        opacity: 1;
+    }
+}
+@keyframes up-wide100-anim{
+    0% {
+        opacity: 0;
+        width: 0;
+        transform: translateY(30px);
+    }
+    50%{
+        opacity: 1;
+        width: 0;
+        transform: translateY(0);
+    }
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes selected-anim{
+    0% {
+        opacity: 1;
+        width: 100%;
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 0;
+        width: 100%;
+    }
+}
+@keyframes deselected-anim{
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        width: 100%;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+        width: 0;
+    }
+    100%{
+        transform: translateY(40px);
+        opacity: 0;
+        width: 0;
+    }
+}
+
+@keyframes down-wide-anim{
+    0% {
+        opacity: 1;
+        width: 80%;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+        width: 0;
+        transform: translateY(0);
+    }
+    100%{
+        width: 0;
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+@keyframes infinite-spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/*
+@keyframes start-test{
+    0% {
+        opacity: 1;
+        width: 80%;
+        height: 70px;
+    }
+
+    10%{
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-240px);
+        border: 5px solid #FFFFFF;
+        border-radius: 100px;
+    }
+
+    20%{
+        transform: translateY(-240px);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    80%{
+        transform: translateY(-240px) rotate(3turn);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    90%{
+        transform: translateY(-240px) rotate(-2turn) scaleX(0.1);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-240px) rotate(0turn) scaleX(0.1) scaleY(0);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+@keyframes start-test1{
+    0% {
+        opacity: 1;
+        width: 80%;
+        height: 70px;
+    }
+
+    10%{
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-300px);
+        border: 5px solid #FFFFFF;
+        border-radius: 100px;
+    }
+
+    20%{
+        transform: translateY(-300px);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    80%{
+        transform: translateY(-300px) rotateZ(720deg);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    90%{
+        transform: translateY(-300px) rotateZ(360deg) scaleX(0.1);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-300px) rotateZ(360deg) scaleX(0.1) scaleY(0);
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        border-radius: 0;
+    }
+}*/
+@mixin anim($name, $delay, $duration:0s, $ll:ease){
+    animation: $name $delay $ll $duration 1 normal forwards;
+}

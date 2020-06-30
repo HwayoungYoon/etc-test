@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="나에게 맞는 전공 테스트">
+        <meta name="description" content="나에게 맞는 전공은 무엇일까?">
+        <meta property="og:title" content="나에게 맞는 전공 테스트" />
+        <meta property="og:url" content="https://hwayoungyoon.github.io/etc-test/" />
+        <meta property="og:image" content="img/og-logo.png" /> <!-- 공유했을 때 보이는 사진 -->
+        <meta name="naver-site-verification" content="d6359cf3d13372a96456d66421ec52da6e1b3a82"/>
+        <meta name="keywords" content="전공 테스트, 나에게 맞는 전공 테스트, my-major-test-duksung, my-major-test" />
+        <meta name="author" content="Hwayoung Yoon" />
+        <meta property="og:description" content="나에게 맞는 전공은 무엇일까?" />
+
+        <link rel="shortcut icon" type="text/css" href="img/favicon_major.png"> <!-- 페이지 열었을 때 주소창 아이콘 -->
+        <link rel="appel-touch-icon-precomposed" href="img/favicon_major.png">
+
+        <title>나에게 맞는 전공 테스트</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css?v=16">
+        <script src="/js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="main-page" class="top-container">
+            <div id="test-page">
+                <div class="page-container">
+                    <div class="background-img"></div>
+                    <div class="background-dim"></div>
+                    <div class="header">
+                        <div>여행지 테스트</div>
+                        <div><a href='http://blahapp.io/' target="_blank"><img src="/img/logo.png"></a></div>
+                    </div>
+                    <div class="question"></div>
+                    <div class="answer-box"></div>
+                    <div style="flex:1"></div>
+                    <div class="left-count"></div>
+                </div>
+            </div>
+
+            <div id="calc-page">
+                <div class="background-img"></div>
+                <div class="background-dim"></div>
+                <div class="content">
+                    <div><img src="/img/logo.png"></div>
+                    <div>분석중...</div>
+                </div>
+            </div>
+
+            <div id="result-page">
+                <div class="background-img"></div>
+                <div class="content">
+                    <div class="header">
+                        <div onclick="location.reload()"><img src="/img/arrow_left.png"> <span>나의 이상형에게 찰떡인 여행지 찾기</span> </div>
+                        <div><a href='http://blahapp.io/' target="_blank"><img src="/img/logo.png"></a></div>
+                    </div>
+                    <div class="title">당신에게 찰떡인 여행지는</div>
+                    <div class="blank"></div>
+                    <div class="result">
+                        <div class="place-box">
+                            <span></span>
+                            <div class="char"><img src="/img/faces/png"></div>
+                        </div>
+                        <div class="description">
+                        </div>
+                        <div class="app-btn" onclick="openModal()">
+                            <span>프랑스 파리</span><img src="/img/arrow_black.png">
+                        </div>
+
+                        <iframe src="https://storybook.zeze.at/iframe.html?id=social-share-travel--general&viewMode=story" frameborder="0" width="100%" style="margin-top:14px;" height="215px" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="app-desc-modal">
+                <div class="close" onclick="close_modal()"><img src="/img/modal_close.png"></div>
+                <div class="con">
+                    <div class="title">
+                        <div>blah!</div>
+                        <div>블라가 당신의 진짜 친구를 준비했어요</div>
+                    </div>
+                    <div class="desc">
+                        테스트에서 여러분의 성격과 성향에 맞는 캐릭터를. 보여준 것 처럼, 우리는 모두 다양한 내면과 성격을 가지고 있습니다.<br>
+                        우리는 평소에 우리의 “진짜” 모습을 사람들에게 얼마나 보여주고 있을까요?<br>
+                        <br>
+                        blah는 관심사 기반으로 “진짜” 친구를 만들 수 있는 영상 메신저입니다.<br>
+                        6000만개의 캐릭터를 기반으로, 관심사에 맞는 친구를 자동으로 매칭해줍니다.<br>
+                        내가 원하는 모습으로 마음이 통하는 새로운 친구를 만들어보세요!<br>
+                        <br>
+                        <div>
+                            <a target="_blank" href="https://blahapp.onelink.me/mFLi/43d938c7"><img src="/img/btn_gotoapp.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">
+                <div>여행지 테스트</div>
+                <div>나에게 어울리는 여행지는 어디일까?</div>
+            </div>
+
+            <div class="bottom">
+                <button class="yellow" onclick="start_test(1)">#여행지 테스트 하러가기 <img src="/img/arrow.png"></button>
+                <button class="green" onclick="start_test(2)">#내 이상형의 여행지 테스트 <img src="/img/arrow.png"></button>
+                <button class="other" onclick="window.open('http://myuniversitytest.com/')" >#대학교 학과 테스트 하러가기</button>
+
+                <div class="logo">
+                    <a href='http://blahapp.io/' target="_blank"><img src="/img/logo.png"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    <script src="/js/main.js?v=16"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155087417-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155087417-3');
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '519309975454841');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=519309975454841&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</html>
